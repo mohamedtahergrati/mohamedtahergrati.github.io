@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+<head>
+    <meta charset="utf-8">
+    <title>mon portfolio</title>
+    <!-- css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <!--css-->
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- font -->
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+</head>
+<!-- head-->
+
+<!-- body -->
+<body>
+
+    <!-- header -->
+    <div class="block">
+    <header class="header">
+        <a href="#" class="header-logo">Mon Portfolio</a>
+        <nav class="header-menu">
+            <a href="#">Accueil</a>
+            <a href="#">A propos</a>
+            <a href="#">Mes travaux</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    </div>
+    <!-- header -->
+    
+    <!-- banner -->
+     <div class="block">
+         <div class="banner">
+             <img src="src/img/bg.jpg" alt="un ordinateur avec du code" class="banner-image">
+             <div class="banner-content">
+                 <h1 class="title is-1">Bienvenue sur mon portfolio</h1>
+                 <h2 class="subtitle">Decouvrez mes travaux!</h2>
+                 <button class="button is-link" id="open_modal">contactez moi</button>
+             </div>
+         </div>
+     </div>
+    <!-- banner -->
+
+    <!-- modal -->
+    <div class="modal own-modal" id="modal_to_open">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Modal title</p>
+          <button class="delete" aria-label="close" id="close_modal"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Save changes</button>
+          <button class="button">Cancel</button>
+        </footer>
+      </div>
+    </div>
+    <!-- modal -->
+
+    <!-- section: a propos-->
+    <h2 class="subtitle heading-site">Mon portfolio</h2>
+    <div class="block">
+        <div class="container about">
+            <div class="columns">
+                <div class="column about-single-element">
+                    <i class="fas fa-code icon"></i> 
+                    <p>
+                        il va a l ecole avec son ami et ensemble ils ont une tres grande puissance sauf qu'il a du talent mais apres tour il dit bye bye
+                    </p>
+                </div>
+                <div class="column about-single-element">
+                    <i class="fas fa-code icon"></i>
+                    <p>
+                        il va a l ecole avec son ami et ensemble ils ont une tres grande puissance sauf qu'il a du talent mais apres tour il dit bye bye
+                    </p>
+                </div>
+                <div class="column about-single-element">
+                    <i class="fas fa-pencil-alt icon"></i>
+                    <p>
+                        il va a l ecole avec son ami et ensemble ils ont une tres grande puissance sauf qu'il a du talent mais apres tour il dit bye bye
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section: a propos-->
+
+    <!-- portfolio-->
+    <div class="block">
+        <div class="container">
+            <h2 class="subtitle heading-site">Mon portfolio</h2>
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child notification is-primary">
+                    <p class="title">Vertical...</p>
+                    <p class="subtitle">Top tile</p>
+                  </article>
+                  <article class="tile is-child notification is-warning">
+                    <p class="title">...tiles</p>
+                    <p class="subtitle">Bottom tile</p>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification is-info">
+                    <p class="title">Middle tile</p>
+                    <p class="subtitle">With an image</p>
+                    <figure class="image is-4by3">
+                      <img src="https://bulma.io/images/placeholders/640x480.png">
+                    </figure>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-danger">
+                  <p class="title">Wide tile</p>
+                  <p class="subtitle">Aligned with the right tile</p>
+                  <div class="content">
+                    <!-- Content -->
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-success">
+                <div class="content">
+                  <p class="title">Tall tile</p>
+                  <p class="subtitle">With even more content</p>
+                  <div class="content">
+                    <!-- Content -->
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- portfolio-->
+
+    <!-- contact -->
+    <div class="block">
+        <footer class="footer">
+            <h2 class="heading-site">Contactez-moi</h2>
+            <div class="footer-contact-form">
+                <form>
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                  <input class="input" type="text" placeholder="e.g Alex Smith" name="name">
+                                </div>
+                              </div>
+                              
+                              <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                  <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
+                                </div>
+                              </div>
+                              <div class="field">
+                                    <label class="label">Message</label>
+                                    <div class="control">
+                                      <textarea class="textarea" placeholder="how we can help you?" name="message"></textarea>
+                                    </div>
+                                  </div>
+                </form>
+            </div>
+            <div class="footer-information">
+                <p>rue saint marc shawinigan</p>
+                <p>appartement 2</p>
+                <ul>
+                    <li>
+                      <a href="#">
+                          <i class="fab fa-facebook-square"></i> 
+                      </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i> 
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i> 
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- contact -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+<!-- body -->
+</html>
